@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home-section">
+        <div class="logo">
+            <img src="image.png" alt="">
+        </div>
+        <div class="greet-user">
+        <h1>Hello User!</h1>
+        </div>
+        <div class="info">
+        <h3>Enter your name to continue the Quiz. </h3>
+        </div>
+        <div class="input">
+        <input type="text" id="username" placeholder="Enter your name">
+        <button id="start-quiz">Enter</button>
+        </div>
+        <div class="instruction">
+            You will have 10 second to answer each question
+        </div>
+        <hr>
+        <br>
+        <div class="selcategory">
+            <h2>Select Category</h2>
+        </div>
+        <div class="ques-option     ">
+        <button id="Pipes-and-Cisterns-button">Pipes and Cisterns</button>
+        <button id="Probability-button">Probability</button>
+        <button id="Problems-on-Ages-button">Problems on Ages</button>
+        <button id="Profit-and-Loss-button">Profit and Loss</button>
+        </div>
+    </div>
+
+    <div id="quiz-section" style="display: none;">
+        <h2 id="category-heading"></h2>
+        <div class="timer-score">
+            <span id="timer">120</span>
+            <span id="score"> Score :<b> 0</b></span>
+        </div>
+        <div id="question-area">
+            <div class="question-text">
+            <p id="question-text"></p>
+            </div>
+            <ul id="options">
+            </ul>
+            <button id="submit-button">Submit</button>
+        </div>
+    </div>
+
+    <div id="result-section" style="display: none;">
+        <h2>Quiz Results</h2>
+        <div class="result-info">
+        <p id="final-score"></p>
+        </div>
+        <div class="result-button">
+        <button id="restart-button"></button>
+        
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
